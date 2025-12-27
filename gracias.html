@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Mensaje enviado! | Lobo Seguros</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #0052CC;
+            --color-secondary: #00C7B7;
+            --color-bg: #F8FAFC;
+            --color-dark: #0A1628;
+            --color-text: #334155;
+            --color-text-light: #64748B;
+            --color-success: #10B981;
+            --gradient-primary: linear-gradient(135deg, #0052CC 0%, #00C7B7 100%);
+            --font-main: 'Plus Jakarta Sans', -apple-system, sans-serif;
+            --shadow-lg: 0 16px 48px rgba(0,0,0,0.16);
+            --radius-xl: 32px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-main);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 40px;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .card {
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: 48px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(0, 199, 183, 0.1) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+        }
+
+        .icon svg {
+            width: 40px;
+            height: 40px;
+            stroke: var(--color-success);
+            fill: none;
+            stroke-width: 2;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--color-dark);
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: var(--color-text-light);
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-family: var(--font-main);
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.4s ease;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: 0 4px 20px rgba(0, 82, 204, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 82, 204, 0.5);
+        }
+
+        .whatsapp-note {
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid var(--color-bg);
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+        }
+
+        .whatsapp-note a {
+            color: #25D366;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .whatsapp-note a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-color.png" alt="Lobo Seguros">
+            </a>
+        </div>
+        
+        <div class="card">
+            <div class="icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+            </div>
+            
+            <h1>¡Mensaje enviado!</h1>
+            <p>Recibí tu consulta correctamente. Te voy a contactar en menos de 24 horas.</p>
+            
+            <a href="index.html" class="btn btn-primary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                Volver al inicio
+            </a>
+
+            <div class="whatsapp-note">
+                ¿Preferís respuesta inmediata? <br>
+                <a href="https://wa.me/5491166794861">Escribime por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
