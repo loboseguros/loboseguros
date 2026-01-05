@@ -8,6 +8,9 @@ Allow: /
 # Bloquear página de agradecimiento (no necesita indexarse)
 Disallow: /gracias.html
 
+# Bloquear rutas de Cloudflare
+Disallow: /cdn-cgi/
+
 # Ubicación del Sitemap
 Sitemap: https://www.loboseguros.com.ar/sitemap.xml
 
