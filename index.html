@@ -3873,68 +3873,13 @@ header.scrolled .menu-toggle span {
     font-weight: 600;
 }
 
-/* Tarjetas informativas - Sección Por qué un asesor */
+/* Tarjetas informativas adicionales */
 .info-cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 24px;
     margin-top: 48px;
-}
-
-.info-card {
-    background: var(--color-white);
-    border-radius: var(--radius-lg);
-    padding: 32px;
-    box-shadow: var(--shadow-sm);
-    border: 1px solid rgba(0,0,0,0.05);
-    transition: var(--transition);
-}
-
-.info-card:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-4px);
-}
-
-.info-card-icon {
-    width: 56px;
-    height: 56px;
-    background: var(--gradient-primary);
-    border-radius: var(--radius-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.info-card-icon svg {
-    width: 28px;
-    height: 28px;
-    stroke: white;
-    fill: none;
-    stroke-width: 2;
-}
-
-.info-card h3 {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: var(--color-dark);
-    margin-bottom: 16px;
-    line-height: 1.4;
-}
-
-.info-card p {
-    color: var(--color-text);
-    font-size: 0.95rem;
-    line-height: 1.7;
-    margin-bottom: 12px;
-}
-
-.info-card p:last-child {
-    margin-bottom: 0;
-}
-
-.info-card strong {
-    color: var(--color-dark);
+    margin-bottom: 24px;
 }
 
 .info-card-highlight {
@@ -3949,13 +3894,8 @@ header.scrolled .menu-toggle span {
     margin: 0;
     font-weight: 600;
     font-size: 0.9rem;
-}
-
-@media (max-width: 768px) {
-    .info-cards-container {
-        grid-template-columns: 1fr;
-    }
-}        
+    color: var(--color-dark);
+}       
     </style>
 </head>
 <body>
@@ -4273,32 +4213,38 @@ header.scrolled .menu-toggle span {
 
 <!-- Tarjetas informativas adicionales -->
         <div class="info-cards-container">
-            <article class="info-card">
-                <div class="info-card-icon">
-                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <div class="comparison-card positive reveal">
+                <div class="comparison-header">
+                    <div class="comparison-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    </div>
+                    <div>
+                        <div class="comparison-title">¿Por qué elegir un productor en vez de un cotizador online?</div>
+                    </div>
                 </div>
-                <h3>¿Por qué elegir un productor en vez de un cotizador online?</h3>
-                <p>Un <strong>cotizador online</strong> te muestra precios, pero no analiza si esa cobertura es la que realmente necesitás. Si tenés un siniestro, estás solo.</p>
-                <p>Con un <strong>productor asesor</strong> tenés a alguien que entiende tu situación, te explica la letra chica y te defiende cuando más lo necesitás.</p>
+                <p style="color: var(--color-text); font-size: 0.95rem; line-height: 1.7; margin-bottom: 12px;">Un <strong>cotizador online</strong> te muestra precios, pero no analiza si esa cobertura es la que realmente necesitás. Si tenés un siniestro, estás solo.</p>
+                <p style="color: var(--color-text); font-size: 0.95rem; line-height: 1.7; margin-bottom: 12px;">Con un <strong>productor asesor</strong> tenés a alguien que entiende tu situación, te explica la letra chica y te defiende cuando más lo necesitás.</p>
                 <div class="info-card-highlight">
                     <p>Además, accedo a tarifas preferenciales que no están disponibles en canales directos. Mismo precio o menos, con acompañamiento real.</p>
                 </div>
-            </article>
+            </div>
 
-            <article class="info-card">
-                <div class="info-card-icon">
-                    <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <div class="comparison-card positive reveal">
+                <div class="comparison-header">
+                    <div class="comparison-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <div>
+                        <div class="comparison-title">¿Siempre conviene el seguro más barato?</div>
+                    </div>
                 </div>
-                <h3>¿Siempre conviene el seguro más barato?</h3>
-                <p>No. El seguro más barato suele tener <strong>exclusiones importantes</strong> que descubrís cuando necesitás usarlo.</p>
-                <p>Mi trabajo es encontrar el <strong>equilibrio justo</strong> entre lo que pagás y lo que realmente te cubre. A veces por poca diferencia obtenés mucha más protección.</p>
+                <p style="color: var(--color-text); font-size: 0.95rem; line-height: 1.7; margin-bottom: 12px;">No. El seguro más barato suele tener <strong>exclusiones importantes</strong> que descubrís cuando necesitás usarlo.</p>
+                <p style="color: var(--color-text); font-size: 0.95rem; line-height: 1.7; margin-bottom: 12px;">Mi trabajo es encontrar el <strong>equilibrio justo</strong> entre lo que pagás y lo que realmente te cubre. A veces por poca diferencia obtenés mucha más protección.</p>
                 <div class="info-card-highlight">
                     <p>Te asesoro para que no pagues de más, pero tampoco quedes descubierto cuando más lo necesitás.</p>
                 </div>
-            </article>
+            </div>
         </div>
-
-    </div>
 </section>    
 
 <!-- Digital Banner -->
