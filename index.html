@@ -3549,28 +3549,30 @@
             }
 
             .reviews-arrow {
+                display: none;
+            }
+
+            .reviews-dots {
                 display: flex;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                background: white;
-                border: 1px solid #ddd;
-                align-items: center;
                 justify-content: center;
-                cursor: pointer;
-                z-index: 10;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                gap: 8px;
+                position: absolute;
+                bottom: 15px;
+                left: 0;
+                right: 0;
+                z-index: 20;
             }
 
-            .reviews-prev {
-                left: 10px;
+            .reviews-dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: #ddd;
+                transition: background 0.3s;
             }
 
-            .reviews-next {
-                right: 10px;
+            .reviews-dot.active {
+                background: var(--color-primary);
             }
 
             .google-reviews-header {
@@ -4310,6 +4312,7 @@ header.scrolled .menu-toggle span {
 
                 <!-- Reviews Slider -->
                 <div class="google-reviews-slider">
+                        <div class="reviews-dots"></div>
                         <button class="reviews-arrow reviews-prev" aria-label="Anterior">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
                         </button>
@@ -4991,6 +4994,45 @@ header.scrolled .menu-toggle span {
         
         window.addEventListener('scroll', revealOnScroll);
         revealOnScroll();
+        // Reviews dots para móvil
+function initReviewsDots() {
+    const slider = document.querySelector('.google-reviews-slider');
+    const track = document.querySelector('.google-reviews-track');
+    const cards = document.querySelectorAll('.google-review-card');
+    const dotsContainer = document.querySelector('.reviews-dots');
+    
+    if (!dotsContainer || !track || cards.length === 0) return;
+    
+    const originalCards = cards.length / 2;
+    const numDots = Math.min(originalCards, 6);
+    
+    dotsContainer.innerHTML = '';
+    for (let i = 0; i < numDots; i++) {
+        const dot = document.createElement('span');
+        dot.className = 'reviews-dot' + (i === 0 ? ' active' : '');
+        dotsContainer.appendChild(dot);
+    }
+    
+    const reviewsSlider = document.querySelector('.google-reviews-slider');
+    let currentDot = 0;
+    
+    reviewsSlider.addEventListener('scroll', function() {
+        const scrollLeft = reviewsSlider.scrollLeft;
+        const cardWidth = cards[0].offsetWidth + 20;
+        const newDot = Math.round(scrollLeft / cardWidth) % numDots;
+        
+        if (newDot !== currentDot) {
+            document.querySelectorAll('.reviews-dot').forEach((d, i) => {
+                d.classList.toggle('active', i === newDot);
+            });
+            currentDot = newDot;
+        }
+    });
+}
+
+if (window.innerWidth <= 768) {
+    initReviewsDots();
+}
         // Reviews slider mobile
         const reviewsTrack = document.querySelector('.google-reviews-track');
         const reviewsPrev = document.querySelector('.reviews-prev');
