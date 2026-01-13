@@ -2974,14 +2974,18 @@
         }
 
         .google-reviews-slider {
-            margin-left: 0;
-            margin-right: 0;
-            width: 100%;
+            position: relative;
+            overflow: hidden;
+            margin-left: calc(-50vw + 50%);
+            margin-right: calc(-50vw + 50%);
+            width: 100vw;
         }
-        
+
         .google-reviews-track {
-            animation: none;
-            transition: transform 0.3s ease;
+            display: flex;
+            gap: 20px;
+            animation: scrollReviews 35s linear infinite;
+            width: max-content;
         }
 
         .google-reviews-track:hover {
@@ -3006,6 +3010,10 @@
         .google-review-card:hover {
             box-shadow: var(--shadow-md);
             transform: translateY(-4px);
+        }
+
+        .reviews-dots {
+            display: none;
         }
 
         .google-review-header {
@@ -3537,11 +3545,32 @@
                 margin-left: 0;
                 margin-right: 0;
                 width: 100%;
+                overflow-x: auto;
+                overflow-y: hidden;
+                -webkit-overflow-scrolling: touch;
+                scroll-snap-type: x mandatory;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                padding: 0 16px;
+            }
+            
+            .google-reviews-slider::-webkit-scrollbar {
+                display: none;
             }
 
             .google-reviews-track {
                 animation: none;
-                transition: transform 0.3s ease;
+                transform: none !important;
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 16px;
+            }
+            
+            .google-review-card {
+                scroll-snap-align: start;
+                width: 85vw;
+                max-width: 320px;
+                flex-shrink: 0;
             }
 
             .reviews-arrow {
@@ -3552,23 +3581,20 @@
                 display: flex;
                 justify-content: center;
                 gap: 8px;
-                position: absolute;
-                bottom: 15px;
-                left: 0;
-                right: 0;
-                z-index: 20;
+                margin-top: 16px;
             }
 
             .reviews-dot {
-                width: 8px;
-                height: 8px;
+                width: 10px;
+                height: 10px;
                 border-radius: 50%;
                 background: #ddd;
-                transition: background 0.3s;
+                transition: background 0.3s, transform 0.3s;
             }
 
             .reviews-dot.active {
                 background: var(--color-primary);
+                transform: scale(1.2);
             }
 
             .google-reviews-header {
@@ -4308,8 +4334,7 @@ header.scrolled .menu-toggle span {
 
                 <!-- Reviews Slider -->
                 <div class="google-reviews-slider">
-                        <div class="reviews-dots"></div>
-                        <button class="reviews-arrow reviews-prev" aria-label="Anterior">
+                        <button class="reviews-arrow reviews-prev"
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
                         </button>
                         <button class="reviews-arrow reviews-next" aria-label="Siguiente">
@@ -4678,6 +4703,7 @@ header.scrolled .menu-toggle span {
                         </div>
                     </div>
                 </div>
+                <div class="reviews-dots"></div>
             </div>
         </div>
     </section>
@@ -5014,7 +5040,7 @@ function initReviewsDots() {
     
     reviewsSlider.addEventListener('scroll', function() {
         const scrollLeft = reviewsSlider.scrollLeft;
-        const cardWidth = cards[0].offsetWidth + 20;
+        const cardWidth = cards[0].offsetWidth + 16;
         const newDot = Math.round(scrollLeft / cardWidth) % numDots;
         
         if (newDot !== currentDot) {
