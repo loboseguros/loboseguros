@@ -2974,18 +2974,33 @@
         }
 
         .google-reviews-slider {
-            position: relative;
-            overflow: hidden;
-            margin-left: calc(-50vw + 50%);
-            margin-right: calc(-50vw + 50%);
-            width: 100vw;
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            padding-bottom: 40px;
         }
-
+        
+        .google-reviews-slider::-webkit-scrollbar {
+            display: none;
+        }
+        
         .google-reviews-track {
-            display: flex;
-            gap: 20px;
-            animation: scrollReviews 35s linear infinite;
-            width: max-content;
+            animation: none;
+            transition: none;
+            transform: none !important;
+        }
+        
+        .google-review-card {
+            scroll-snap-align: start;
+            width: 85vw;
+            max-width: 340px;
+            flex-shrink: 0;
         }
 
         .google-reviews-track:hover {
@@ -3557,7 +3572,7 @@
                 justify-content: center;
                 gap: 8px;
                 position: absolute;
-                bottom: 15px;
+                bottom: 5px;
                 left: 0;
                 right: 0;
                 z-index: 20;
