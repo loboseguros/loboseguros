@@ -2977,30 +2977,11 @@
             margin-left: 0;
             margin-right: 0;
             width: 100%;
-            overflow-x: auto;
-            overflow-y: hidden;
-            -webkit-overflow-scrolling: touch;
-            scroll-snap-type: x mandatory;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            padding-bottom: 40px;
-        }
-        
-        .google-reviews-slider::-webkit-scrollbar {
-            display: none;
         }
         
         .google-reviews-track {
             animation: none;
-            transition: none;
-            transform: none !important;
-        }
-        
-        .google-review-card {
-            scroll-snap-align: start;
-            width: 85vw;
-            max-width: 340px;
-            flex-shrink: 0;
+            transition: transform 0.3s ease;
         }
 
         .google-reviews-track:hover {
@@ -3572,7 +3553,7 @@
                 justify-content: center;
                 gap: 8px;
                 position: absolute;
-                bottom: 5px;
+                bottom: 15px;
                 left: 0;
                 right: 0;
                 z-index: 20;
