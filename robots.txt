@@ -8,6 +8,9 @@ Allow: /
 # Bloquear página de agradecimiento (no necesita indexarse)
 Disallow: /gracias.html
 
+# Bloquear URLs de búsqueda interna
+Disallow: /?s=
+
 # Bloquear rutas de Cloudflare
 Disallow: /cdn-cgi/
 
