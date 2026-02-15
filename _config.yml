@@ -1,0 +1,97 @@
+# =============================================
+# Lobo Seguros - Blog Jekyll Configuration
+# =============================================
+
+# Información básica del sitio
+title: "Blog | Lobo Seguros"
+description: "Artículos y guías sobre seguros en Argentina. Consejos prácticos, novedades del mercado asegurador y todo lo que necesitás saber para proteger lo que más importa."
+author: "Nahuel Lobo"
+email: "lobonahuel.seguros@gmail.com"
+url: "https://www.loboseguros.com.ar"
+baseurl: "/blog"
+logo: "/img/logo-color.png"
+
+# Configuración del blog
+permalink: /:year/:month/:title/
+paginate: 6
+paginate_path: "/page/:num/"
+
+# Zona horaria y formato de fecha
+timezone: America/Argentina/Buenos_Aires
+date_format: "%d de %B de %Y"
+
+# SEO y Open Graph
+twitter:
+  username: loboseguros
+  card: summary_large_image
+social:
+  name: Lobo Seguros
+  links:
+    - https://www.instagram.com/seguros.nl/
+    - https://wa.me/5491166794861
+
+# Información de contacto
+contact:
+  phone: "+54 9 11 6679-4861"
+  whatsapp: "5491166794861"
+  email: "lobonahuel.seguros@gmail.com"
+  instagram: "@seguros.nl"
+
+# Configuración de Giscus (COMPLETAR CON TUS DATOS)
+giscus:
+  repo: "loboseguros/loboseguros"  # ← Cambiar por tu repo de GitHub
+  repo_id: ""               # ← Obtener de giscus.app
+  category: "Comentarios Blog"
+  category_id: "TU-CATEGORY-ID"       # ← Obtener de giscus.app
+  mapping: "pathname"
+  reactions_enabled: "1"
+  emit_metadata: "0"
+  input_position: "top"
+  theme: "light"
+  lang: "es"
+
+# Colecciones y defaults
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Nahuel Lobo"
+      comments: true
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Excluir archivos del build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+
+# Plugins (solo los soportados por GitHub Pages)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# Feed RSS
+feed:
+  path: feed.xml
