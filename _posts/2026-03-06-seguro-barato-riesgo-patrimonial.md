@@ -2,6 +2,7 @@
 layout: post
 title: "El Seguro Más Barato Te Puede Salir Carísimo: La Verdad Sobre el Mercado Automotor"
 description: "Análisis técnico sobre las variables que determinan el costo del seguro. Por qué la cuota baja es un riesgo y la importancia del asesor profesional."
+excerpt: "¿Por qué el seguro es tan caro? Y más importante: ¿por qué elegir el más barato puede costarte millones?"
 date: 2026-03-06
 category: "Seguros de Auto"
 image: https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800
@@ -116,4 +117,5 @@ Especialista en Zona Oeste: Castelar, Ituzaingó, Morón
     }
   ]
 }
+
 </script>
