@@ -88,6 +88,21 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <!-- Blog -->
+    <url>
+        <loc>https://www.loboseguros.com.ar/blog/</loc>
+        <lastmod>2026-03-11</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
     
+    <!-- Artículos del Blog -->
+    <url>
+        <loc>https://www.loboseguros.com.ar/blog/seguro-barato-riesgo-patrimonial/</loc>
+        <lastmod>2026-03-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
         
 </urlset>
