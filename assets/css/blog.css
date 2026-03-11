@@ -1518,17 +1518,6 @@ footer {
     border-bottom-color: #128C7E;
 }
 
-/* ========== DESTACADOS CON NEGRITA ========== */
-.post-content p > strong:only-child {
-    display: block;
-    color: var(--color-dark);
-    font-size: 1.1rem;
-    padding: 1rem 1.25rem;
-    background: var(--color-bg);
-    border-radius: var(--radius-sm);
-    border-left: 3px solid var(--color-primary);
-    margin: 1.5rem 0;
-}
 
 /* ========== FIRMA DEL AUTOR ========== */
 .post-content p:last-of-type:has(strong) {
