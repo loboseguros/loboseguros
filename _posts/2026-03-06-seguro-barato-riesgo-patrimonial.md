@@ -5,7 +5,7 @@ description: "Análisis técnico sobre las variables que determinan el costo del
 excerpt: "¿Por qué el seguro es tan caro? Y más importante: ¿por qué elegir el más barato puede costarte millones?"
 date: 2026-03-06
 category: "Seguros de Auto"
-image: https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800
+image: https://www.loboseguros.com.ar/img/seguro-barato-costo.jpg
 permalink: /blog/seguro-barato-riesgo-patrimonial/
 tags: ["seguros 2026", "productor de seguros", "SSN", "Zona Oeste", "Castelar", "Morón", "Ituzaingó"]
 author: "Nahuel Lobo"
@@ -119,3 +119,4 @@ Especialista en Zona Oeste: Castelar, Ituzaingó, Morón
 }
 
 </script>
+
