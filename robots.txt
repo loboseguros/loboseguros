@@ -15,9 +15,7 @@ Disallow: /?s=
 Disallow: /cdn-cgi/
 
 # Ubicación del Sitemap
-Sitemap: https://www.loboseguros.com.ar/sitemap.xml
-
-Sitemap: https://www.loboseguros.com.ar/blog/sitemap.xml
+Sitemap: https://www.loboseguros.com.ar/sitemap-index.xml
 
 # Permitir específicamente a los bots de IA
 User-agent: GPTBot
