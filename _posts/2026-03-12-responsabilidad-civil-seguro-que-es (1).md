@@ -5,7 +5,7 @@ description: "Qué es la cobertura de Responsabilidad Civil, por qué es la más
 excerpt: "Por qué tu seguro no te paga cuando te chocan, qué cubre realmente la RC, y cómo reclamar correctamente."
 date: 2026-03-12
 category: "Seguros de Auto"
-image: https://www.loboseguros.com.ar/img/responsabilidad-civil-seguro-auto.jpg
+image: https://www.loboseguros.com.ar/img/responsabilidad-civil-seguro-auto-castelar-zona-oeste.png
 permalink: /blog/responsabilidad-civil-seguro-que-es/
 tags: ["responsabilidad civil", "seguro auto", "reclamo terceros", "seguros castelar", "zona oeste", "productor de seguros"]
 author: "Nahuel Lobo"
