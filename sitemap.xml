@@ -111,5 +111,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <url>
+        <loc>https://www.loboseguros.com.ar/blog/cambiar-productor-seguros-sin-cambiar-compania/</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
         
 </urlset>
