@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Cómo cambiar de productor de seguros sin cambiar de compañía"
-description: "Guía completa para cambiar de asesor de seguros manteniendo tu póliza, cobertura y precio. Procedimiento legal, tiempos y modelo de carta de nombramiento."
-excerpt: "Podés cambiar de productor de seguros sin modificar tu póliza. Te explico el procedimiento legal, los tiempos y cómo hacerlo sin complicaciones."
+description: "Guía completa para cambiar de asesor de seguros manteniendo tu póliza, cobertura y precio. Procedimiento y tiempos"
+excerpt: "Podés cambiar de productor de seguros sin modificar tu póliza. Te explico el procedimiento, los tiempos y cómo hacerlo sin complicaciones."
 date: 2026-03-26
 category: "Seguros de Auto"
 image: https://www.loboseguros.com.ar/img/cambiar-productor-seguros.jpg
