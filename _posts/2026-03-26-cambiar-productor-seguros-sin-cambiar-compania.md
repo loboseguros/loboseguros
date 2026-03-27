@@ -5,7 +5,7 @@ description: "Guía completa para cambiar de asesor de seguros manteniendo tu p�
 excerpt: "Podés cambiar de productor de seguros sin modificar tu póliza. Te explico el procedimiento, los tiempos y cómo hacerlo sin complicaciones."
 date: 2026-03-26
 category: "Seguros de Auto"
-image: https://www.loboseguros.com.ar/img/cambiar-productor-seguros.jpg
+image: https://www.loboseguros.com.ar/img/cambiar-productor-seguros.png
 permalink: /blog/cambiar-productor-seguros-sin-cambiar-compania/
 tags: ["productor de seguros", "cambiar de asesor", "seguros castelar", "zona oeste", "asesor de seguros"]
 author: "Nahuel Lobo"
