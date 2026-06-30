@@ -4713,54 +4713,61 @@ header.scrolled .menu-toggle span {
     </section>
 
     <!-- Formulario de Contacto -->
-<section class="contact-section" id="diagnostico">
-    <div class="container">
-        <div class="contact-container">
-            <div class="contact-card">
-                <form class="contact-form" id="contactForm" action="https://formsubmit.co/lobonahuel.seguros@gmail.com" method="POST">
-                    <!-- Configuración FormSubmit -->
-                    <input type="hidden" name="_subject" value="Nueva consulta desde Lobo Seguros">
-                    <input type="hidden" name="_captcha" value="true">
-                    <input type="hidden" name="_next" value="https://loboseguros.com.ar/gracias.html">
-                    <input type="hidden" name="_template" value="table">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="nombre">Nombre *</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="telefono">WhatsApp *</label>
-                            <input type="tel" id="telefono" name="telefono" placeholder="11 1234-5678" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="seguro">¿Qué seguro te interesa?</label>
-                        <select id="seguro" name="seguro">
-                            <option value="">Seleccioná una opción</option>
-                            <option value="auto">Auto o moto</option>
-                            <option value="hogar">Hogar</option>
-                            <option value="comercio">Comercio y Empresa</option>
-                            <option value="vida">Vida y AP</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje (opcional)</label>
-                        <textarea id="mensaje" name="mensaje" placeholder="Contame qué necesitás..." rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-                        Enviar consulta
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
+  <section class="contact-section" id="diagnostico">
+      <div class="container">
+          <div class="contact-container">
+              <div class="contact-card">
+                  <form class="contact-form" id="contactForm"
+                        action="https://loboseguros.fidcore.com.ar/api/publico/leads/9ed3c56b9792470373f04850ca259c56a458e87dbd66e98e8b0162e901f7534e"
+                        method="POST">
+
+                      <!-- Redirect después del envío -->
+                      <input type="hidden" name="redirect_to" value="https://loboseguros.com.ar/gracias.html">
+
+                      <!-- Honeypot anti-bot: tiene que quedar VACÍO. Los bots lo llenan y caen. -->
+                      <input type="text" name="website_honeypot" tabindex="-1" autocomplete="off"
+                             style="position:absolute;left:-9999px;opacity:0;height:0;width:0;pointer-events:none"
+                             aria-hidden="true">
+
+                      <div class="form-row">
+                          <div class="form-group">
+                              <label for="nombre">Nombre *</label>
+                              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="telefono">WhatsApp *</label>
+                              <input type="tel" id="telefono" name="telefono" placeholder="11 1234-5678" required>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="email">Email *</label>
+                          <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="seguro">¿Qué seguro te interesa?</label>
+                          <select id="seguro" name="seguro">
+                              <option value="">Seleccioná una opción</option>
+                              <option value="auto">Auto o moto</option>
+                              <option value="hogar">Hogar</option>
+                              <option value="comercio">Comercio y Empresa</option>
+                              <option value="vida">Vida y AP</option>
+                              <option value="otro">Otro</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="mensaje">Mensaje (opcional)</label>
+                          <textarea id="mensaje" name="mensaje" placeholder="Contame qué necesitás..." rows="4"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                          Enviar consulta
+                      </button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
+
 
         
     <!-- Footer -->
