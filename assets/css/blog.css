@@ -844,28 +844,81 @@ header.scrolled .menu-toggle span {
     color: var(--color-white);
 }
 
-/* CTA del autor */
-.post-author-cta {
-    background: var(--gradient-primary);
+/* Recuadro de consulta (_includes/consulta.html): uno a mitad del artículo y otro al final */
+.consulta-articulo {
+    margin: 2.5rem 0;
+    padding: 1.75rem;
     border-radius: var(--radius-md);
-    padding: var(--spacing-xl);
-    margin-top: var(--spacing-xl);
-    text-align: center;
-    color: var(--color-white);
+    background: var(--color-bg);
+    border: 1px solid #E2E8F0;
+    border-left: 4px solid #25D366;
 }
 
-.post-author-cta h3 {
-    font-size: 1.5rem;
+.consulta-articulo .consulta-titulo {
+    color: var(--color-dark);
+    font-size: 1.2rem;
     font-weight: 700;
-    margin-bottom: 0.75rem;
+    line-height: 1.35;
+    margin: 0 0 0.5rem;
 }
 
-.post-author-cta p {
-    opacity: 0.9;
-    margin-bottom: 1.5rem;
-    max-width: 500px;
+.consulta-articulo .consulta-texto {
+    line-height: 1.7;
+    margin: 0 0 1.25rem;
+}
+
+.consulta-articulo .consulta-alcance {
+    color: var(--color-text-light);
+    font-size: 0.85rem;
+    margin: 0.85rem 0 0;
+}
+
+/* el botón no toma el estilo de los enlaces a WhatsApp del texto (más abajo) */
+.post-content .consulta-articulo a.btn-whatsapp,
+.post-content .consulta-articulo a.btn-whatsapp:hover {
+    color: var(--color-white);
+    border-bottom: none;
+}
+
+.consulta-final {
+    background: var(--gradient-primary);
+    border: none;
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.consulta-final .consulta-titulo {
+    color: var(--color-white);
+    font-size: 1.5rem;
+}
+
+.consulta-final .consulta-texto {
+    color: var(--color-white);
+    opacity: 0.92;
+    max-width: 520px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.consulta-final .consulta-alcance {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 600px) {
+    .consulta-articulo {
+        padding: 1.25rem 1rem;
+    }
+
+    .consulta-final {
+        padding: var(--spacing-lg) 1rem;
+    }
+
+    /* «Escribime por WhatsApp» en un renglón desde 360 px de ancho */
+    .consulta-articulo .btn {
+        width: 100%;
+        padding: 14px 16px;
+        font-size: 0.9rem;
+    }
 }
 
 /* ========== BOTONES ========== */

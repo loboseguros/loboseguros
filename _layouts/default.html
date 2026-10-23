@@ -15,8 +15,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Básico -->
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <!-- Artículos: lo que muestra Google es «seo_title» (si no, el título) y «description» del encabezado del artículo -->
+    <title>{% if page.layout == 'post' %}{{ page.seo_title | default: page.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.layout == 'post' and page.description %}{{ page.description | strip_html | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="author" content="{{ site.author }}">
     <meta name="robots" content="index, follow">
     

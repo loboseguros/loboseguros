@@ -1,13 +1,15 @@
 ---
 layout: post
 title: "Responsabilidad Civil en el Seguro de Auto: Qué Cubre y Cómo Funciona"
-description: "Qué es la cobertura de Responsabilidad Civil, por qué es la más importante del seguro de auto, y cómo funciona cuando te chocan o cuando vos causás un accidente."
+seo_title: "Qué es la responsabilidad civil del seguro de auto y qué cubre"
+description: "Qué significa la RC en tu póliza, qué cubre si chocás y tenés la culpa, y a quién le reclamás si te chocan. Explicado por un productor matriculado."
 excerpt: "Por qué tu seguro no te paga cuando te chocan, qué cubre realmente la RC, y cómo reclamar correctamente."
 date: 2026-03-12
+last_modified_at: 2026-10-23
 category: "Seguros de Auto"
 image: https://www.loboseguros.com.ar/img/responsabilidad-civil-seguro-auto-castelar-zona-oeste.jpg
 permalink: /blog/responsabilidad-civil-seguro-que-es/
-tags: ["responsabilidad civil", "seguro auto", "reclamo terceros", "seguros castelar", "zona oeste", "productor de seguros"]
+tags: ["responsabilidad civil", "seguro auto", "reclamo terceros", "productor de seguros"]
 author: "Nahuel Lobo"
 ---
 
@@ -19,7 +21,7 @@ Parece simple, pero esta confusión genera frustración, reclamos mal direcciona
 
 ## Qué es la Responsabilidad Civil (y qué no es)
 
-La cobertura de Responsabilidad Civil (RC) es, técnicamente, la más importante de todas las coberturas de un seguro de auto. Y sin embargo, es la menos comprendida.
+La cobertura de Responsabilidad Civil (RC) es, técnicamente, la más importante de todas las coberturas de un [seguro de auto](/seguro-auto.html). Y sin embargo, es la menos comprendida.
 
 La Ley 17.418 (la ley que regula los seguros en Argentina) define en su Artículo 109 que el seguro de responsabilidad civil tiene por objeto **mantener indemne al asegurado** por cuanto deba a un tercero como consecuencia de la responsabilidad prevista en el contrato.
 
@@ -68,6 +70,8 @@ El seguro está funcionando exactamente como corresponde. La confusión viene de
 El seguro es un contrato donde la compañía se compromete a cubrir determinados riesgos. Si contrataste solo RC, el riesgo cubierto es que vos causes daños a terceros. El riesgo de que otros te causen daños a vos no está incluido.
 
 Esta asesoría sobre estos temas —a veces complejos— es exactamente lo que podés pedirle a tu productor asesor de seguros. Su función es explicarte qué cubre y qué no cubre tu póliza **antes** de que ocurra un siniestro, para que tomes decisiones informadas.
+
+{% include consulta.html titulo="¿Te chocaron y tenés que reclamarle a la compañía del otro?" texto="Te oriento con el reclamo: qué documentación presentar, cómo armarlo y qué opciones tenés si la respuesta es negativa." mensaje="Hola Nahuel, leí tu artículo de responsabilidad civil y necesito ayuda con un reclamo" %}
 
 ## Cuando la culpa no está clara: lo que importa es la prueba
 
@@ -181,15 +185,13 @@ Si causás un daño, tu RC responde por vos: indemniza al tercero y te defiende 
 
 Entender estas diferencias antes de contratar, y contar con un productor de seguros que te asesore y te acompañe cuando ocurre un siniestro, marca la diferencia entre una experiencia frustrante y una resolución ordenada.
 
----
-
-📱 **[Escribime por WhatsApp](https://wa.me/5491166794861?text=Hola%20Nahuel%2C%20tengo%20una%20consulta%20sobre%20responsabilidad%20civil)** si tenés dudas sobre tu cobertura de RC o necesitás ayuda con un reclamo.
+{% include consulta.html titulo="¿Sabés qué cubre tu póliza?" texto="Te reviso la póliza sin compromiso y te explico qué cubre y qué no, antes de que lo necesites." mensaje="Hola Nahuel, tengo una consulta sobre responsabilidad civil" final=true %}
 
 ---
 
 **Nahuel Lobo**  
 Productor Asesor de Seguros - Matrícula SSN #97154  
-Especialista en Seguros Zona Oeste: Castelar, Ituzaingó, Morón
+Todo el país por WhatsApp · Presencial en Castelar y Zona Oeste
 
 ---
 
