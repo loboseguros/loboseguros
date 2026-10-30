@@ -191,7 +191,7 @@ Entender estas diferencias antes de contratar, y contar con un productor de segu
 
 **Nahuel Lobo**  
 Productor Asesor de Seguros - Matrícula SSN #97154  
-Todo el país por WhatsApp · Presencial en Castelar y Zona Oeste
+Castelar, Zona Oeste · Atención en todo el país
 
 ---
 

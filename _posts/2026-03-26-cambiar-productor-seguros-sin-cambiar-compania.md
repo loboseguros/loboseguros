@@ -141,7 +141,7 @@ Podés cambiar hoy mismo sin modificar tu póliza ni pagar nada extra.
 
 **Nahuel Lobo**  
 Productor Asesor de Seguros - Matrícula SSN #97154  
-Todo el país por WhatsApp · Presencial en Castelar y Zona Oeste
+Castelar, Zona Oeste · Atención en todo el país
 
 <script type="application/ld+json">
 {

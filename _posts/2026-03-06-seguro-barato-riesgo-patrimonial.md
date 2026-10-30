@@ -79,7 +79,7 @@ Las pólizas económicas no son más eficientes; son más limitadas. Por otro la
 ---
 
 **Nahuel Lobo** Productor Asesor de Seguros - Matrícula SSN #97154  
-Todo el país por WhatsApp · Presencial en Castelar y Zona Oeste
+Castelar, Zona Oeste · Atención en todo el país
 
 <script type="application/ld+json">
 {
