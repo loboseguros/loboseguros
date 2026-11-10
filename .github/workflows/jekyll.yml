@@ -29,7 +29,8 @@ concurrency:
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-latest
+    # Fijo en 24.04: desde nov. 2026 ubuntu-latest es 26.04 y setup-ruby no tiene Ruby 3.1 para esa versión.
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
